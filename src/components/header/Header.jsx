@@ -5,17 +5,21 @@ const Headers = styled.div`
   border: solid 1px lightgrey;
   border-radius: 5px;
   padding: 20px;
-  height: 20px;
+  height: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  background-image: url("https://img.stibee.com/23876_1629340598.jpg");
+  background-size: 100% 100%;
+  h1{
+    color: #fff;
+  }
 `;
 
 function Header() {
   return (
     <Headers>
-      <h2>My Todo List</h2>
-      <h3>React</h3>
+      <h1>화성갈끄니까~</h1>
     </Headers>
   );
 }
