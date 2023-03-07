@@ -6,9 +6,9 @@ import { BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
 import AddTodos from "./components/addTodos/AddTodos";
 import Header from "./components/header/Header";
-import TodoDetail from "./pages/TodoDetail";
+import TodoDetail from "./pages/todoDetail/TodoDetail";
 import TodoList from "./components/todoList/TodoList";
-import Main from "./pages/Main";
+import Main from "./pages/main/Main";
 
 function App() {
   return (

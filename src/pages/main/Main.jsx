@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import AddTodos from "../components/addTodos/AddTodos";
-import Header from "../components/header/Header";
-import TodoList from "../components/todoList/TodoList";
+import AddTodos from "../../components/addTodos/AddTodos";
+import Header from "../../components/header/Header";
+import TodoList from "../../components/todoList/TodoList";
 
 const TodosWrapper = styled.div`
   height: 100vh;
