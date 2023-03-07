@@ -22,8 +22,8 @@ const initialState = {
     },
     {
       id: 1,
-      title: "리액트 강의보기",
-      content: "챕터 1부터 챕터 12까지 학습",
+      title: "놓치마",
+      content: "정신줄",
       done: false,
     },
     {
