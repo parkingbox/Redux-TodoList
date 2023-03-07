@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
@@ -8,7 +8,7 @@ import { AddTodoWrapper, Button, Form, Input } from "./addTodos.styled";
 function AddTodos() {
   const [title, setTitle] = useState();
   const [content, setContent] = useState();
-  const todos = useSelector((state) => state.todos.todos);
+  const { todos } = useSelector((state) => state.todos);
   const dispatch = useDispatch();
 
   //  마지막index + 1
