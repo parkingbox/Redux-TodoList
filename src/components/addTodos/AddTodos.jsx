@@ -6,8 +6,8 @@ import { addTodo } from "../../redux/modules/todos";
 import { AddTodoWrapper, Button, Form, Input } from "./addTodos.styled";
 
 function AddTodos() {
-  const [title, setTitle] = useState();
-  const [content, setContent] = useState();
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
   const { todos } = useSelector((state) => state.todos);
   const dispatch = useDispatch();
 
@@ -39,8 +39,7 @@ function AddTodos() {
         제목:
         <Input
           type="text"
-          // input 내의 value 가 undefined로 들어간듯 함?
-          value={title || ""}
+          value={title}
           onChange={(e) => {
             setTitle(e.target.value);
           }}
@@ -48,7 +47,7 @@ function AddTodos() {
         내용:
         <Input
           type="text"
-          value={content || ""}
+          value={content}
           onChange={(e) => {
             setContent(e.target.value);
           }}
