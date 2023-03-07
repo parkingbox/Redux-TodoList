@@ -18,6 +18,9 @@ export const completeTodo = (payload) => {
 const initialState = {
   todos: [
     {
+      id: 0,
+    },
+    {
       id: 1,
       title: "리액트 강의보기",
       content: "챕터 1부터 챕터 12까지 학습",
